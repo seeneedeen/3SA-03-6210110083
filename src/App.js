@@ -9,8 +9,7 @@ function App() {
         <div>
         <WordCard value="hello"/>
         </div>
-        );
-       
+        );      
 }
 export default App;
 
