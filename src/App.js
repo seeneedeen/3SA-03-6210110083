@@ -3,11 +3,11 @@ import './App.css';
 import React from 'react';
 import WordCard from './WordCard';
 import CharacterCard from './CharacterCard';
-const word = "Hello";
+const word = "hello";
 function App() {
     return (
         <div>
-        <WordCard value="hello"/>
+        <WordCard value= "DONE"/>       
         </div>
         );      
 }
