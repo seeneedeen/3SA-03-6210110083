@@ -3,8 +3,12 @@ import './App.css';
 import React from 'react';
 import WordCard from './WordCard';
 import CharacterCard from './CharacterCard';
-const word = ["cat", "monkey", "mole", "wolf", "sheep", "whale", "bison", "rabbit"];
+const  word = ["cat", "monkey", "mole", "wolf", "sheep", "whale", "bison", "rabbit"];
 const randomword = word[Math.floor(Math.random() * word.length)];
+function delay(ms) {
+    ms += new Date().getTime();
+    while (new Date() < ms){}
+ }
 function App() {
     return (
         <div>
@@ -14,5 +18,6 @@ function App() {
         </div>
         );      
 }
+
 export default App;
 
