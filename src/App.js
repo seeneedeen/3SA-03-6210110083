@@ -3,11 +3,14 @@ import './App.css';
 import React from 'react';
 import WordCard from './WordCard';
 import CharacterCard from './CharacterCard';
-const word = "hello";
+const word = ["cat", "monkey", "mole", "wolf", "sheep", "whale", "bison", "rabbit"];
+const randomElement = word[Math.floor(Math.random() * word.length)];
 function App() {
     return (
         <div>
-        <WordCard value= "DONE"/>       
+            <h1 align = "center"> สุ่มชื่อสัตว์
+        <WordCard value= {randomElement}/>   
+        </h1>    
         </div>
         );      
 }
